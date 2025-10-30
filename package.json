@@ -3,6 +3,9 @@
       "version": "0.1.0",
       "private": true,
       "dependencies": {
+            "@capacitor/android": "^6.2.1",
+            "@capacitor/cli": "^6.2.1",
+            "@capacitor/core": "^6.2.1",
             "@jsr/supabase__supabase-js": "^2.49.8",
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",
@@ -60,6 +63,12 @@
       },
       "scripts": {
             "dev": "vite",
-            "build": "vite build"
+            "build": "vite build",
+            "cap:init": "cap init",
+            "cap:add:android": "cap add android",
+            "cap:sync": "cap sync",
+            "cap:open:android": "cap open android",
+            "build:android": "npm run build && cap sync && cd android && ./gradlew assembleRelease",
+            "build:android:debug": "npm run build && cap sync && cd android && ./gradlew assembleDebug"
       }
 }
