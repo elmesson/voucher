@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gestão de Refeições</string>
+    <string name="title_activity_main">Gestão de Refeições</string>
+    <string name="package_name">com.mello.voucher</string>
+    <string name="custom_url_scheme">com.mello.voucher</string>
+</resources>
